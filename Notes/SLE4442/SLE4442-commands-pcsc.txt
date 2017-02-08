@@ -1,0 +1,27 @@
+#Run below using tool from https://sites.google.com/site/bondhannovandy/download/SimDevStudio.zip?attredirects=0&d=1 
+
+#verify pin with default FFFFFF
+FF20000003FFFFFF
+
+#Read the entire memory
+FFB0000000
+
+#Write 1 byte to address 50
+FFD600500101
+
+#Update the pin with 11 22 33
+FF21000006FFFFFF112233
+
+#Verify with new pin
+FF20000003112233
+
+#Revert back the PIN with FFFFFF
+FF21000006112233FFFFFF
+
+#verify pin with default FFFFFF
+FF20000003FFFFFF
+
+#Read the entire memory
+FFB0000000
+
+
